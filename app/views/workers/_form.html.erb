@@ -1,0 +1,28 @@
+<%= simple_form_for(@worker) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.association :division, label: 'División', include_blank: false %>
+    <%= link_to 'Agregar División', new_division_path, class: 'btn btn-info'  %>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <%= f.association :unit, label: 'Unidad', include_blank: false %>
+        <%= link_to 'Agregar Unidad', new_unit_path, class: 'btn btn-info' %>
+      </div>
+      <div class="col-md-6">
+        <%= f.association :charge, label: 'Cargo', include_blank: false %>
+        <%= link_to 'Agregar Cargo', new_charge_path, class: 'btn btn-info' %>
+      </div>
+    </div>
+    <hr>
+    <%= f.input :name, label: 'Nombre' %>
+    <%= f.input :email, label: 'Correo Electronico' %>
+    <%= f.input :phone, label: 'Anexo Telefonico' %>
+  </div>
+  <hr>
+  <div class="form-actions">
+    <%= f.button :submit, class: 'btn btn-primary btn-lg btn-block' %>
+  </div>
+<% end %>
