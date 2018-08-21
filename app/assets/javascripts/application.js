@@ -36,22 +36,22 @@ $( document ).on('turbolinks:load', function() {
 $(document).on('turbolinks:load', function() {
   $("#dttb").dataTable({
     language: {
-        url: 'http://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
+        url: 'https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
     }
   });
   $("#dttb2").dataTable({
     language: {
-        url: 'http://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
+        url: 'https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
     }
   });
   $("#dttb3").dataTable({
     language: {
-        url: 'http://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
+        url: 'https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
     }
   });
   $("#dttb4").dataTable({
     language: {
-        url: 'http://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
+        url: 'https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
     }
   });
 });
