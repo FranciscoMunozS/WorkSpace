@@ -17,23 +17,41 @@
 //= require select2
 //= require activestorage
 //= require turbolinks
+//= require datatables
 //= require_tree .
 
 
-$( document ).ready(function() {
+$( document ).on('turbolinks:load', function() {
   $( "#worker_division_id" ).select2({
     theme: "bootstrap"
   });
-});
-
-$( document ).ready(function() {
   $( "#worker_unit_id" ).select2({
+    theme: "bootstrap"
+  });
+  $( "#worker_charge_id" ).select2({
     theme: "bootstrap"
   });
 });
 
-$( document ).ready(function() {
-  $( "#worker_charge_id" ).select2({
-    theme: "bootstrap"
+$(document).on('turbolinks:load', function() {
+  $("#dttb").dataTable({
+    language: {
+        url: 'http://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
+    }
+  });
+  $("#dttb2").dataTable({
+    language: {
+        url: 'http://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
+    }
+  });
+  $("#dttb3").dataTable({
+    language: {
+        url: 'http://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
+    }
+  });
+  $("#dttb4").dataTable({
+    language: {
+        url: 'http://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json'
+    }
   });
 });

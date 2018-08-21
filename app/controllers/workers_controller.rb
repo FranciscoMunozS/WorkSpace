@@ -1,6 +1,6 @@
 class WorkersController < ApplicationController
   before_action :set_worker, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, except: [:index]
   # GET /workers
   # GET /workers.json
   def index
@@ -28,7 +28,7 @@ class WorkersController < ApplicationController
 
     respond_to do |format|
       if @worker.save
-        format.html { redirect_to @worker, notice: 'Worker was successfully created.' }
+        format.html { redirect_to @worker, notice: 'Funcionario creado correctamente.' }
         format.json { render :show, status: :created, location: @worker }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class WorkersController < ApplicationController
   def update
     respond_to do |format|
       if @worker.update(worker_params)
-        format.html { redirect_to @worker, notice: 'Worker was successfully updated.' }
+        format.html { redirect_to @worker, notice: 'Funcionario actualizado correctamente.' }
         format.json { render :show, status: :ok, location: @worker }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class WorkersController < ApplicationController
   def destroy
     @worker.destroy
     respond_to do |format|
-      format.html { redirect_to workers_url, notice: 'Worker was successfully destroyed.' }
+      format.html { redirect_to workers_url, notice: 'Funcionario eliminado.' }
       format.json { head :no_content }
     end
   end

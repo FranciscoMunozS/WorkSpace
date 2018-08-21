@@ -1,17 +1,27 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Workers</h1>
-
-<table class="table">
+<div class="row">
+  <div class="col-md-6">
+    <h3>Funcionarios</h3>
+  </div>
+  <div class="col-md-6">
+    <p class="text-right">
+      <% if user_signed_in? %>
+        <%= link_to 'Agregar Nuevo Funcionario', new_worker_path, class: 'btn btn-primary' %>
+      <% end %>
+    </p>
+  </div>
+</div>
+<hr>
+<table class="table table-bordered" id="dttb">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Phone</th>
-      <th>Division</th>
-      <th>Unit</th>
-      <th>Charge</th>
-      <th colspan="3"></th>
+      <th>Nombre Funcionario</th>
+      <th>Cargo</th>
+      <th>Unidad</th>
+      <th>División</th>
+      <% if user_signed_in? %>
+        <th>Opciones</th>
+      <% end %>
     </tr>
   </thead>
 
@@ -19,19 +29,13 @@
     <% @workers.each do |worker| %>
       <tr>
         <td><%= worker.name %></td>
-        <td><%= worker.email %></td>
-        <td><%= worker.phone %></td>
-        <td><%= worker.division.name %></td>
-        <td><%= worker.unit.name %></td>
         <td><%= worker.charge.name %></td>
-        <td><%= link_to 'Show', worker %></td>
-        <td><%= link_to 'Edit', edit_worker_path(worker) %></td>
-        <td><%= link_to 'Destroy', worker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= worker.unit.name %></td>
+        <td><%= worker.division.name %></td>
+        <% if user_signed_in? %>
+          <td><%= link_to 'Ver Funcionario', edit_worker_path(worker), class: 'btn btn-info btn-block btn-sm' %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Worker', new_worker_path %>

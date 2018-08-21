@@ -1,27 +1,35 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Charges</h1>
-
-<table>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Cargos</h3>
+  </div>
+  <div class="col-md-6">
+    <p class="text-right">
+      <%= link_to 'Agregar Nuevo Cargo', new_charge_path, class: 'btn btn-primary' %>
+    </p>
+  </div>
+</div>
+<hr>
+<table class="table table-bordered" id="dttb4">
   <thead>
     <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
+      <th class="text-center">Nombre Cargo</th>
+      <th class="text-center">Opciones</th>
     </tr>
   </thead>
 
   <tbody>
     <% @charges.each do |charge| %>
       <tr>
-        <td><%= charge.name %></td>
-        <td><%= link_to 'Show', charge %></td>
-        <td><%= link_to 'Edit', edit_charge_path(charge) %></td>
-        <td><%= link_to 'Destroy', charge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="text-center"><%= charge.name %></td>
+        <td class="text-center">
+          <%= link_to 'Ver Cargo', edit_charge_path(charge), class: 'btn btn-info btn-sm' %>
+          <%= link_to 'Eliminar', charge, method: :delete, data: { confirm: 'Esta seguro?' }, class: 'btn btn-danger btn-sm' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Charge', new_charge_path %>
