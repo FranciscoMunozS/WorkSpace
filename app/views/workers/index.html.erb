@@ -15,6 +15,7 @@
 <table class="table table-bordered" id="dttb">
   <thead>
     <tr>
+      <th>Foto</th>
       <th>Nombre Funcionario</th>
       <th>Cargo</th>
       <th>Unidad</th>
@@ -28,6 +29,9 @@
   <tbody>
     <% @workers.each do |worker| %>
       <tr>
+        <td class="text-center">
+          <%= image_tag worker.avatar_url, width: '40%' if worker.avatar.present? %>
+        </td>
         <td><%= worker.name %></td>
         <td><%= worker.charge.name %></td>
         <td><%= worker.unit.name %></td>

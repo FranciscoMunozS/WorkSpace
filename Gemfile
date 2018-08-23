@@ -19,6 +19,8 @@ gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
 gem 'rack-cors', '~> 1.0', '>= 1.0.2'
 gem 'devise', '~> 4.5'
 gem 'jquery-datatables'
+gem 'carrierwave', '~> 1.2', '>= 1.2.3'
+gem 'mini_magick', '~> 4.8'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 

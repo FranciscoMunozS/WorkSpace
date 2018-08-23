@@ -20,7 +20,6 @@
 //= require datatables
 //= require_tree .
 
-
 $( document ).on('turbolinks:load', function() {
   $( "#worker_division_id" ).select2({
     theme: "bootstrap"

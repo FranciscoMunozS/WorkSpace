@@ -4,7 +4,7 @@ class WorkersController < ApplicationController
   # GET /workers
   # GET /workers.json
   def index
-    @workers = Worker.all
+    @workers = Worker.all.order("created_at ASC")
   end
 
   # GET /workers/1
@@ -69,6 +69,6 @@ class WorkersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def worker_params
-      params.require(:worker).permit(:name, :email, :phone, :division_id, :unit_id, :charge_id)
+      params.require(:worker).permit(:name, :email, :phone, :division_id, :unit_id, :charge_id, :avatar)
     end
 end

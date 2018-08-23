@@ -26,6 +26,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
+  padding-bottom: 40px;
 }
 
 .btn {
@@ -40,4 +41,12 @@ body {
   max-width: 400px;
   margin: auto;
   width: 50%;
+}
+
+table {
+  table-layout: fixed;
+}
+
+td {
+  width: 33%;
 }
