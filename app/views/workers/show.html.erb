@@ -1,34 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @worker.name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @worker.email %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @worker.phone %>
-</p>
-
-<p>
-  <strong>Division:</strong>
-  <%= @worker.division %>
-</p>
-
-<p>
-  <strong>Unit:</strong>
-  <%= @worker.unit %>
-</p>
-
-<p>
-  <strong>Charge:</strong>
-  <%= @worker.charge %>
-</p>
-
-<%= link_to 'Edit', edit_worker_path(@worker) %> |
-<%= link_to 'Back', workers_path %>
+<h3>Funcionario</h3>
+<hr>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <%= image_tag @worker.avatar.url, class: 'card-img-top' %>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="card">
+      <h5 class="card-header">Datos Funcionario</h5>
+      <div class="card-body">
+        <p class="card-text"><strong>Nombre: </strong><%= @worker.name %></p>
+        <p class="card-text"><strong>Cargo: </strong><%= @worker.charge.name %> <%= @worker.unit.name %></p>
+        <p class="card-text"><strong>División: </strong><%= @worker.division.name %></p>
+      </div>
+      <div class="card-footer">
+        <div class="list-inline">
+          <%= link_to 'Editar', edit_worker_path(@worker), class: 'btn btn-primary' %>
+          <%= link_to 'Volver', workers_path, class: 'btn btn-primary' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
