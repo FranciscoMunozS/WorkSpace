@@ -1,9 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @charge.name %>
-</p>
-
-<%= link_to 'Edit', edit_charge_path(@charge) %> |
-<%= link_to 'Back', charges_path %>
+<div class="card">
+  <h5 class="card-header">
+    Datos Cargo
+  </h5>
+  <div class="card-body">
+    <strong>Nombre Cargo:</strong>
+    <%= @charge.name %>
+  </div>
+  <div class="card-footer">
+    <div class="list-inline">
+      <%= link_to 'Editar Cargo', edit_charge_path(@charge), class: 'btn btn-primary' %>
+      <%= link_to 'Volver', charges_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
+</div>

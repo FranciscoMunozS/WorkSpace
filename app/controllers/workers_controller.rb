@@ -1,28 +1,21 @@
 class WorkersController < ApplicationController
   before_action :set_worker, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index]
-  # GET /workers
-  # GET /workers.json
+
   def index
     @workers = Worker.all.order("created_at ASC")
   end
 
-  # GET /workers/1
-  # GET /workers/1.json
   def show
   end
 
-  # GET /workers/new
   def new
     @worker = Worker.new
   end
 
-  # GET /workers/1/edit
   def edit
   end
 
-  # POST /workers
-  # POST /workers.json
   def create
     @worker = Worker.new(worker_params)
 
@@ -37,8 +30,6 @@ class WorkersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /workers/1
-  # PATCH/PUT /workers/1.json
   def update
     respond_to do |format|
       if @worker.update(worker_params)
@@ -51,8 +42,6 @@ class WorkersController < ApplicationController
     end
   end
 
-  # DELETE /workers/1
-  # DELETE /workers/1.json
   def destroy
     @worker.destroy
     respond_to do |format|
@@ -62,12 +51,10 @@ class WorkersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_worker
       @worker = Worker.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def worker_params
       params.require(:worker).permit(:name, :email, :phone, :division_id, :unit_id, :charge_id, :avatar)
     end

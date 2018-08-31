@@ -1,9 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @unit.name %>
-</p>
-
-<%= link_to 'Edit', edit_unit_path(@unit) %> |
-<%= link_to 'Back', units_path %>
+<div class="card">
+  <h5 class="card-header">Datos Unidad</h5>
+  <div class="card-body">
+      <strong>Nombre:</strong>
+      <%= @unit.name %>
+  </div>
+  <div class="card-footer">
+    <div class="list-inline">
+      <%= link_to 'Editar Unidad', edit_unit_path(@unit), class: 'btn btn-primary' %>
+      <%= link_to 'Volver', units_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
+</div>

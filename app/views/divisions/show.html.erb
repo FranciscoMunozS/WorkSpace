@@ -1,9 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @division.name %>
-</p>
-
-<%= link_to 'Edit', edit_division_path(@division) %> |
-<%= link_to 'Back', divisions_path %>
+<div class="card">
+  <h5 class="card-header">
+    Datos División
+  </h5>
+  <div class="card-body">
+    <strong>Nombre División:</strong>
+    <%= @division.name %>
+  </div>
+  <div class="card-footer">
+    <%= link_to 'Editar División', edit_division_path(@division), class: 'btn btn-primary' %>
+    <%= link_to 'Volver', divisions_path, class: 'btn btn-primary' %>
+  </div>
+</div>
