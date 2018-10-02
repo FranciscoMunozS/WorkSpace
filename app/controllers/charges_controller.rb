@@ -4,7 +4,7 @@ class ChargesController < ApplicationController
   # GET /charges
   # GET /charges.json
   def index
-    @charges = Charge.all
+    @charges = Charge.all.order("created_at ASC")
   end
 
   # GET /charges/1

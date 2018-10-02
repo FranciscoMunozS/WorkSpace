@@ -22,30 +22,33 @@
     </div>
     <hr>
     <% if f.object.avatar? %>
-      <div class="row text-center">
+      <div class="row">
         <div class="col-md-4">
           <div class="card" style="width: 20rem;">
             <%= image_tag f.object.avatar.url, style: "width: 19,5rem;", class: 'card-img-top' %>
-            <div class="card-body">
+            <div class="card-body text-center">
               <p class="card-text">
                 <strong><%= @worker.name %></strong>
               </p>
-              <label>
-                <%= f.check_box :remove_avatar %>
-                Quitar imagen
-              </label>
             </div>
           </div>
         </div>
+        <div class="col-md-8">
+          <%= f.input :name, label: 'Nombre' %>
+          <%= f.input :email, label: 'Correo Electronico' %>
+          <%= f.input :phone, label: 'Anexo Telefonico' %>
+          <%= f.input :avatar, label: 'Foto Funcionario' %>
+        </div>
       </div>
     <hr>
+    <% else %>
+      <%= f.input :name, label: 'Nombre' %>
+      <%= f.input :email, label: 'Correo Electronico' %>
+      <%= f.input :phone, label: 'Anexo Telefonico' %>
+      <%= f.input :avatar, label: 'Foto Funcionario' %>
+      <hr>
     <% end %>
-    <%= f.input :name, label: 'Nombre' %>
-    <%= f.input :email, label: 'Correo Electronico' %>
-    <%= f.input :phone, label: 'Anexo Telefonico' %>
-    <%= f.input :avatar, label: 'Foto Funcionario' %>
   </div>
-  <hr>
   <div class="form-actions">
     <div class="row">
       <div class="col-md-6">

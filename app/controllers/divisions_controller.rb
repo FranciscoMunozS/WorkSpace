@@ -4,7 +4,7 @@ class DivisionsController < ApplicationController
   # GET /divisions
   # GET /divisions.json
   def index
-    @divisions = Division.all
+    @divisions = Division.all.order("created_at ASC")
   end
 
   # GET /divisions/1

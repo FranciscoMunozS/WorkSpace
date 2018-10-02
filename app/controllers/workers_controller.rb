@@ -3,7 +3,7 @@ class WorkersController < ApplicationController
   before_action :authenticate_user!, except: [:index]
 
   def index
-    @workers = Worker.all.order("created_at ASC")
+    @workers = Worker.all
   end
 
   def show
