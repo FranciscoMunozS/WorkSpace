@@ -1,59 +1,136 @@
+<!--- Inicio División de Presupuesto e Inversión Regional  --->
+
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División Presupuestaria e Inversión Regional" %>
-    <ul>
-      <% if worker.charge.name === "Jefe" %>
-        <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-      <% end %>
-    </ul>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "División de Presupuesto e Inversión Regional" && worker.charge.name === "Jefe" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División Presupuestaria e Inversión Regional" %>
-    <ul>
-      <% if worker.charge.name === "Encargado" %>
-        <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-      <% end %>
-    </ul>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "División de Presupuesto e Inversión Regional" && worker.charge.name === "Secretaria" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División Presupuestaria e Inversión Regional" %>
-    <ul>
-      <% if worker.charge.name === "Profesional" %>
-        <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-      <% end %>
-    </ul>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "División de Presupuesto e Inversión Regional" && worker.charge.name === "Administrativa" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+<!--- Fin División de Presupuesto e Inversión Regional  --->
+
+<!--- Inicio Unidad de Subvenciones --->
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Unidad de Subvenciones" && worker.charge.name === "Coordinador" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División Presupuestaria e Inversión Regional" %>
-    <ul>
-      <% if worker.charge.name === "Tecnico" %>
-        <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-      <% end %>
-    </ul>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Unidad de Subvenciones" && worker.charge.name === "Profesional" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División Presupuestaria e Inversión Regional" %>
-    <ul>
-      <% if worker.charge.name === "Administrativo" %>
-        <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-      <% end %>
-    </ul>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Unidad de Subvenciones" && worker.charge.name === "Administrativa Contable" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División Presupuestaria e Inversión Regional" %>
-    <ul>
-      <% if worker.charge.name === "Auxiliar" %>
-        <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-      <% end %>
-    </ul>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Unidad de Subvenciones" && worker.charge.name === "Asesora Jurídica" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
+
+<!--- Fin Unidad de Subvenciones --->
+
+<!--- Inicio Departamento de Gestión e Inversiones --->
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Departamento de Gestión e Inversiones" && worker.charge.name === "Analista de Inversiones" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<!--- Fin Departamento de Gestión e Inversiones --->
+
+<!--- Inicio Unidad de Programación --->
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Unidad de Programación Electrificación Rural" && worker.charge.name === "Profesional" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Unidad de Programación Residuos Solidos" && worker.charge.name === "Profesional" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Unidad de Programación Saneamiento Sanitario" && worker.charge.name === "Profesional" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Unidad de Programación Saneamiento Sanitario" && worker.charge.name === "Técnico" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<!--- Fin Unidad de Programación --->
+
+<!--- Inicio Unidad de FRIL --->
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "FRIL" && worker.charge.name === "Encargado" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "FRIL" && worker.charge.name === "Profesional" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "FRIL" && worker.charge.name === "Tecnico" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "FRIL" && worker.charge.name === "Administrativo" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "FRIL" && worker.charge.name === "Secretaria" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<!--- Fin Unidad de FRIL --->
+
+<!--- Inicio Departamento de Presupuesto --->
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Departamento de Presupuesto" && worker.charge.name === "Programador FNDR" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Presupuesto e Inversión Regional" && worker.unit.name === "Departamento de Presupuesto" && worker.charge.name === "Apoyo Programador FNDR" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<!--- Fin Departamento de Presupuesto --->

@@ -1,7 +1,9 @@
-<!-- Inicio Intendencia -->
+<!-- Inicio Administración Regional -->
+
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "Intendencia" && worker.unit.name === "Intendencia Regional" && worker.charge.name === "Intendente" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "Administración Regional" && worker.unit.name === "Administración Regional" && worker.charge.name === "Administrador Regional" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
-<!-- Fin Intendencia -->
+
+<!-- Fin Administración Regional -->

@@ -1,0 +1,15 @@
+<!-- Inicio Auditoria Interna -->
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Auditoría Interna" && worker.unit.name === "Auditoría Interna" && worker.charge.name === "Encargado" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Auditoría Interna" && worker.unit.name === "Auditoría Interna" && worker.charge.name === "Profesional" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<!-- Fin Auditoria Interna -->

@@ -1,0 +1,27 @@
+<!-- Inicio Gabinete -->
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Gabinete" && worker.unit.name === "Gabinete" && worker.charge.name === "Encargado" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Gabinete" && worker.unit.name === "Gabinete" && worker.charge.name === "Reportero Gráfico" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Gabinete" && worker.unit.name === "Gabinete" && worker.charge.name === "Asesor Intendente" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Gabinete" && worker.unit.name === "Gabinete" && worker.charge.name === "Administrativo" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<!-- Fin Gabinete -->

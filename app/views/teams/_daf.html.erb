@@ -2,173 +2,131 @@
 
 <% @workers.each do |worker| %>
   <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "División de Administración y Finanzas" && worker.charge.name === "Jefe" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
   <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "División de Administración y Finanzas" && worker.charge.name === "Secretaria" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <!--Fin Jefatura DAF-->
 
 <!--Inicio Departamento de Gestión y Desarrollo de Personas -->
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Gestión y Desarrollo de Personas" && worker.charge.name === "Jefe" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
+<h5>Departamento de Gestión y Desarrollo de Personas</h5>
+<hr>
 
 <% @workers.each do |worker| %>
   <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Gestión y Desarrollo de Personas" && worker.charge.name === "Encargado" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
   <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Gestión y Desarrollo de Personas" && worker.charge.name === "Profesional" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Gestión y Desarrollo de Personas" && worker.charge.name === "Tecnico" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Gestión y Desarrollo de Personas" && worker.charge.name === "Administrativo" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Gestión y Desarrollo de Personas" && worker.charge.name === "Auxiliar" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Gestión y Desarrollo de Personas" && worker.charge.name === "Apoyo Administrativo" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <!--Fin Departamento de Gestión de Personas -->
 
 <!--Inicio Oficina de Partes -->
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Oficina de Partes" && worker.charge.name === "Jefe" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Oficina de Partes" && worker.charge.name === "Encargado" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Oficina de Partes" && worker.charge.name === "Profesional" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Oficina de Partes" && worker.charge.name === "Tecnico" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
-
+<h5>Oficina de Partes</h5>
+<hr>
 <% @workers.each do |worker| %>
   <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Oficina de Partes" && worker.charge.name === "Administrativo" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Oficina de Partes" && worker.charge.name === "Auxiliar" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Oficina de Partes" && worker.charge.name === "Administrativo Of. Partes y SAIP" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Oficina de Partes" && worker.charge.name === "Administrativo Of. Partes" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <!--Fin Oficina de Partes -->
 
 <!--Inicio Departamento de Finanzas -->
-
+<h5>Departamento de Finanzas</h5>
+<hr>
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Jefe" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Encargado" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Encargado" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Profesional Encargada Prog. 01" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
   <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Profesional" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Tecnico" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Tesorero Prog. 01" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Administrativo" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Tesorero Prog. 02" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Auxiliar" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Apoyo Administrativo" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Departamento de Finanzas" && worker.charge.name === "Apoyo Contable" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <!--Fin Departamento de Finanzas -->
 
 <!--Inicio Unidad de Adquisiciones -->
+<h5>Unidad de Adquisiciones</h5>
+<hr>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Adquisiciones" && worker.charge.name === "Jefe" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Adquisiciones" && worker.charge.name === "Encargado" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Adquisiciones" && worker.charge.name === "Profesional" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Adquisiciones" && worker.charge.name === "Tecnico" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Adquisiciones" && worker.charge.name === "Encargada" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
   <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Adquisiciones" && worker.charge.name === "Administrativo" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Adquisiciones" && worker.charge.name === "Auxiliar" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Adquisiciones" && worker.charge.name === "Administrativa" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
@@ -176,79 +134,79 @@
 
 <!--Inicio Unidad de Informatica -->
 
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad Informática" && worker.charge.name === "Jefe" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
+<h5>Unidad Informática</h5>
+<hr>
 
 <% @workers.each do |worker| %>
   <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad Informática" && worker.charge.name === "Encargado" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
   <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad Informática" && worker.charge.name === "Profesional" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad Informática" && worker.charge.name === "Tecnico" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad Informática" && worker.charge.name === "Asesor Informático" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad Informática" && worker.charge.name === "Administrativo" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad Informática" && worker.charge.name === "Diseño y Producción Gráfica" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad Informática" && worker.charge.name === "Auxiliar" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
 
 <!--Fin Unidad de Informatica -->
 
 <!--Inicio Unidad de Servicios Generales -->
+<h5>Servicios Generales</h5>
+<hr>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Jefe" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Encargada" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Encargado" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Apoyo Administrativo" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Profesional" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Apoyo Unidad" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Tecnico" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Conductor" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Amplificación y equipos audiovisuales" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Recepcionista" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 
 <% @workers.each do |worker| %>
   <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Administrativo" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
-  <% end %>
-<% end %>
-
-<% @workers.each do |worker| %>
-  <% if worker.division.name === "División de Administración y Finanzas" && worker.unit.name === "Unidad de Servicios Generales" && worker.charge.name === "Auxiliar" %>
-    <p><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
   <% end %>
 <% end %>
 

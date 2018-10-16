@@ -1,0 +1,11 @@
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Unidad de Gestión Estratégica Institucional" && worker.unit.name === "Unidad de Gestión Estratégica Institucional" && worker.charge.name === "Encargado" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Unidad de Gestión Estratégica Institucional" && worker.unit.name === "Unidad de Gestión Estratégica Institucional" && worker.charge.name === "Profesional" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>

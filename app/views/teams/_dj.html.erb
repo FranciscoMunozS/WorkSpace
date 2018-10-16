@@ -1,0 +1,17 @@
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Departamento Jurídico" && worker.unit.name === "Departamento Jurídico" && worker.charge.name === "Encargado" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Departamento Jurídico" && worker.unit.name === "Departamento Jurídico" && worker.charge.name === "Abogado" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
+
+<% @workers.each do |worker| %>
+  <% if worker.division.name === "Departamento Jurídico" && worker.unit.name === "Departamento Jurídico" && worker.charge.name === "Secretaria" %>
+    <p class="text-muted"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %> </p>
+  <% end %>
+<% end %>
