@@ -1,7 +1,7 @@
 <!-- Inicio Intendencia -->
 <div class="text-center">
   <% @workers.each do |worker| %>
-    <% if worker.division.name === "Intendencia" && worker.unit.name === "Intendente Regional" && worker.charge.name === "Intendente" %>
+    <% if worker.division.name === "Intendente" && worker.unit.name === "Intendente" && worker.charge.name === "Intendente Regional" %>
       <p class="lead"><%= worker.name %> - <%= worker.charge.name %> - <%= worker.email %> - <%= worker.phone %></p>
       <%= image_tag worker.avatar_url, class: "rounded", width: '30%' if worker.avatar.present? %>
       <p class="text-muted">Sr. Intendente <%= worker.name %></p>
