@@ -2,7 +2,7 @@
 lock "~> 3.11.0"
 
 set :application, "WorkSpace"
-set :repo_url, "git@gitlab.com:CoCoRum/WorkSpace.git"
+set :repo_url, "git@github.com:FranciscoMunozS/WorkSpace.git"
 
 set :deploy_to, '/home/deploy/WorkSpace'
 
