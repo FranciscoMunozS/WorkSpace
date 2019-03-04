@@ -28,6 +28,8 @@ gem 'capistrano-passenger', '~> 0.2.0'
 
 gem 'capistrano-rbenv', '~> 2.1'
 
+gem 'capistrano-rake', require: false
+
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
